@@ -20,7 +20,6 @@
     android:id="@+id/dropdown_sort_widget"
     android:layout_width="match_parent"
     android:layout_height="@dimen/doc_header_height"
-    android:paddingEnd="@dimen/dropdown_sort_widget_margin"
     android:background="@drawable/sort_widget_background"
     android:gravity="center_vertical|end"
     android:orientation="horizontal">
@@ -40,6 +39,8 @@
         android:id="@+id/sort_arrow"
         android:layout_width="@dimen/dropdown_sort_widget_size"
         android:layout_height="@dimen/dropdown_sort_widget_size"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="6dp"
         android:background="@drawable/dropdown_sort_widget_background"
         android:padding="10dp"
         android:src="@drawable/ic_sort_arrow"
