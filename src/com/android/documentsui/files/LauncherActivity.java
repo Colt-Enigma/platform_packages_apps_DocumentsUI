@@ -21,6 +21,7 @@ import static com.android.documentsui.base.SharedMinimal.DEBUG;
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.ActivityManager.AppTask;
+import android.app.ActivityManager.RecentTaskInfo;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -86,9 +87,17 @@ public class LauncherActivity extends Activity {
     private @Nullable Intent findTask(ActivityManager activities) {
         List<AppTask> tasks = activities.getAppTasks();
         for (AppTask task : tasks) {
-            Intent intent = task.getTaskInfo().baseIntent;
+            RecentTaskInfo taskInfo = task.getTaskInfo();
+            Intent intent = taskInfo.baseIntent;
             Uri uri = intent.getData();
             if (isLaunchUri(uri)) {
+                if (taskInfo.id < 0) {
+                    // If current task is no longer running, the #restoreTask actually can not
+                    // really restore this task (because topActivity is null), it will create a new
+                    // task (with a new id) with current intent data instead.
+                    // So drop this empty task.
+                    task.finishAndRemoveTask();
+                }
                 return intent;
             }
         }
