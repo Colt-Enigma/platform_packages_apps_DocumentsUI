@@ -300,9 +300,11 @@ public final class DefaultSelectionHelper extends SelectionHelper {
      * @param type The type of selection the range should utilize.
      */
     private void extendRange(int pos, @RangeType int type) {
-        checkState(isRangeActive(), "Range start point not set.");
-
-        mRange.extendSelection(pos, type);
+        try {
+            checkState(isRangeActive(), "Range start point not set.");
+            mRange.extendSelection(pos, type);
+        }catch(Exception e){
+        }
 
         // We're being lazy here notifying even when something might not have changed.
         // To make this more correct, we'd need to update the Ranger class to return
