@@ -27,24 +27,28 @@
 
         <com.android.documentsui.inspector.HeaderView
             android:id="@+id/inspector_header_view"
+            android:textColor="?android:attr/textColorPrimary"
             android:layout_width="match_parent"
             android:paddingBottom="5dp"
             android:layout_height="@dimen/inspector_header_height" />
 
         <com.android.documentsui.inspector.DetailsView
             android:id="@+id/inspector_details_view"
+            android:textColor="@color/text_secondary"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <com.android.documentsui.inspector.MediaView
             android:id="@+id/inspector_media_view"
+            android:textColor="?android:attr/textColorPrimary"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <com.android.documentsui.inspector.actions.ActionView
             android:id="@+id/inspector_show_in_provider_view"
+            android:textColor="?android:attr/textColorPrimary"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,6 +56,7 @@
 
         <com.android.documentsui.inspector.actions.ActionView
             android:id="@+id/inspector_app_defaults_view"
+            android:textColor="?android:attr/textColorPrimary"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

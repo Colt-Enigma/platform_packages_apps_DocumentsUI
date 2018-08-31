@@ -32,6 +32,7 @@
     <color name="text_cursor">@*android:color/white</color>
     <color name="text_handle">#FF82B1FF</color>     <!--Blue A100-->
     <color name="text_highlight">#FF82B1FF</color>  <!--Blue A100-->
+    <color name="text_secondary">?android:attr/textColorSecondary</color>
 
     <color name="band_select_background">#88ffffff</color>
     <color name="band_select_border">#44000000</color>
