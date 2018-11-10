@@ -17,6 +17,7 @@
 package com.android.documentsui.sorting;
 
 import android.annotation.StringRes;
+import android.view.ContextThemeWrapper;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -53,7 +54,8 @@ public final class DropdownSortWidgetController implements WidgetController {
         mDimensionButton = (TextView) mWidget.findViewById(R.id.sort_dimen_dropdown);
         mDimensionButton.setOnClickListener(this::showMenu);
 
-        mMenu = new PopupMenu(widget.getContext(), mDimensionButton, Gravity.END | Gravity.TOP);
+        mMenu = new PopupMenu(new ContextThemeWrapper(widget.getContext(),
+                R.style.SortPopupMenuTheme), mDimensionButton, Gravity.END | Gravity.TOP);
         mMenu.setOnMenuItemClickListener(this::onSelectDimension);
 
         mArrow = (ImageView) mWidget.findViewById(R.id.sort_arrow);

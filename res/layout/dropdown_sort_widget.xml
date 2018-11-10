@@ -21,8 +21,6 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/doc_header_height"
     android:paddingEnd="@dimen/dropdown_sort_widget_margin"
-    android:paddingTop="@dimen/dropdown_sort_widget_margin"
-    android:paddingBottom="@dimen/dropdown_sort_widget_margin"
     android:background="@drawable/sort_widget_background"
     android:gravity="center_vertical|end"
     android:orientation="horizontal">
@@ -35,7 +33,6 @@
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
         android:gravity="center"
-        android:fontFamily="sans-serif-medium"
         android:textSize="@dimen/dropdown_sort_text_size"
         android:textColor="@color/sort_widget_text_color"/>
 
@@ -43,10 +40,10 @@
         android:id="@+id/sort_arrow"
         android:layout_width="@dimen/dropdown_sort_widget_size"
         android:layout_height="@dimen/dropdown_sort_widget_size"
-        android:layout_marginStart="4dp"
         android:background="@drawable/dropdown_sort_widget_background"
-        android:padding="5dp"
+        android:padding="10dp"
         android:src="@drawable/ic_sort_arrow"
-        android:accessibilityTraversalAfter="@id/sort_dimen_dropdown"/>
+        android:accessibilityTraversalAfter="@id/sort_dimen_dropdown"
+        android:tint="@color/sort_widget_text_color" />
 
 </LinearLayout>

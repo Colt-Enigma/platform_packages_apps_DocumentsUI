@@ -25,6 +25,8 @@
     </style>
     <style name="ActionBarPopupTheme" parent="@*android:style/ThemeOverlay.Material.Light" />
 
+    <style name="SortPopupMenuTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog" />
+
     <style name="DocumentsTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="actionBarWidgetTheme">@null</item>
         <item name="actionBarTheme">@style/ActionBarTheme</item>
