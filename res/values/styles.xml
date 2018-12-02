@@ -27,10 +27,16 @@
 
     <style name="SortPopupMenuTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog" />
 
-    <style name="DocumentsTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+    <style name="DialogTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog.Alert" >
+        <item name="android:colorAccent">@color/accent</item>
+    </style>
+
+    <style name="DocumentsTheme" parent="@style/Theme.AppCompat">
         <item name="actionBarWidgetTheme">@null</item>
         <item name="actionBarTheme">@style/ActionBarTheme</item>
         <item name="actionBarPopupTheme">@style/ActionBarPopupTheme</item>
+        <item name="android:popupTheme">@style/ActionBarPopupTheme</item>
+        <item name="android:contextPopupMenuStyle">@style/ActionBarPopupTheme</item>
 
         <item name="android:windowBackground">@color/window_background</item>
         <item name="android:colorPrimaryDark">@color/primary_dark</item>
@@ -46,6 +52,9 @@
         <item name="android:windowNoTitle">true</item>
 
         <item name="android:windowSoftInputMode">stateUnspecified|adjustUnspecified</item>
+        <item name="actionModeStyle">@style/ActionModeStyle</item>
+        <item name="android:actionModeStyle">@style/ActionModeStyle</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
     </style>
 
     <style name="TrimmedHorizontalProgressBar" parent="android:Widget.Material.ProgressBar.Horizontal">
@@ -63,4 +72,11 @@
         <item name="android:textAllCaps">true</item>
     </style>
 
+    <style name="ActionModeStyle" parent="@style/Widget.AppCompat.ActionMode">
+        <item name="android:background">@color/primary</item>
+        <item name="background">@color/primary</item>
+        <item name="android:titleTextStyle">@style/ActionModeTitleStyle</item>
+    </style>
+
+    <style name="ActionModeTitleStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionMode.Title" />
 </resources>

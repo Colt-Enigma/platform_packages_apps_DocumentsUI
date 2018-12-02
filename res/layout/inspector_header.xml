@@ -34,9 +34,9 @@
         android:paddingBottom="5dp"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:textColor="@color/root_title_color"
+        android:textColor="@color/inspector_header_title"
         android:layout_gravity="center_vertical"
-        android:background="@color/inspector_title_background"
+        android:background="?android:attr/colorPrimaryDark"
         android:textIsSelectable="true"
         android:textAlignment="viewStart"
         android:layout_alignBottom="@+id/inspector_thumbnail" />

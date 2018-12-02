@@ -77,9 +77,10 @@
     <color name="scroll_thumb">#ffbebebe</color>
     <color name="scroll_track">#fff0f0f0</color>
 
-    <color name="inspector_value">#ff939393</color>
+    <color name="inspector_key">@*android:color/primary_text_default_material_light</color>
+    <color name="inspector_value">@*android:color/primary_text_default_material_light</color>
     <color name="inspector_link">#6633b5e5</color>
-    <color name="inspector_section_title">#ff939393</color>
+    <color name="inspector_section_title">@*android:color/primary_text_default_material_light</color>
     <color name="inspector_section_divider">#E0E0E0</color>
-    <color name="inspector_title_background">#40000000</color>
+    <color name="inspector_header_title">@*android:color/white</color>
 </resources>

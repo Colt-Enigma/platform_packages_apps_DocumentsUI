@@ -20,14 +20,15 @@
     android:orientation="horizontal"
     android:baselineAligned="false"
     android:gravity="end"
-    android:paddingEnd="@dimen/bottom_bar_padding_end">
+    android:paddingEnd="@dimen/bottom_bar_padding_end"
+    android:background="@color/window_background" >
     <TextView
         style="@style/BottomBarButton"
         android:id="@android:id/button2"
         android:layout_width="@dimen/bottom_bar_negative_button_width"
         android:background="@android:color/transparent"
         android:text="@android:string/cancel"
-        android:textColor="?android:attr/colorAccent"/>
+        android:textColor="@color/root_title_color"/>
     <TextView
         style="@style/BottomBarButton"
         android:id="@android:id/button1"
@@ -35,5 +36,5 @@
         android:layout_marginStart="@dimen/bottom_bar_positive_button_margin_start"
         android:background="@drawable/bottom_bar_positive_button_background"
         android:elevation="@dimen/bottom_bar_positive_button_elevation"
-        android:textColor="?android:attr/colorAccent"/>
+        android:textColor="@color/window_background"/>
 </LinearLayout>

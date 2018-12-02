@@ -19,7 +19,7 @@
     android:layout_height="@dimen/bottom_bar_height"
     android:paddingStart="@dimen/list_item_padding"
     android:paddingEnd="@dimen/bottom_bar_padding_end"
-    android:background="@color/primary"
+    android:background="@color/window_background"
     android:orientation="horizontal"
     android:baselineAligned="false"
     android:gravity="center_vertical"
@@ -60,7 +60,7 @@
             android:background="@drawable/bottom_bar_positive_button_background"
             android:text="@string/menu_save"
             android:elevation="@dimen/bottom_bar_positive_button_elevation"
-            android:textColor="?android:attr/colorAccent"/>
+            android:textColor="@color/root_title_color" />
 
         <ProgressBar
             android:id="@android:id/progress"
