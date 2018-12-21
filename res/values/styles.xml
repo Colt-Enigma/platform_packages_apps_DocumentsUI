@@ -29,6 +29,8 @@
 
     <style name="DialogTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog.Alert" >
         <item name="android:colorAccent">@color/accent</item>
+        <item name="android:dialogCornerRadius">0dp</item>
+        <item name="android:buttonCornerRadius">0dp</item>
     </style>
 
     <style name="DocumentsTheme" parent="@style/Theme.AppCompat">

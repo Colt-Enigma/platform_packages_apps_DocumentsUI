@@ -347,7 +347,7 @@ public class ScopedAccessActivity extends Activity {
             }
             final TextView messageField = (TextView) view.findViewById(R.id.message);
             messageField.setText(message);
-            mDialog = new AlertDialog.Builder(mActivity, R.style.Theme_AppCompat_Light_Dialog_Alert)
+            mDialog = new AlertDialog.Builder(mActivity)
                     .setView(view)
                     .setPositiveButton(R.string.allow, listener)
                     .setNegativeButton(R.string.deny, listener)

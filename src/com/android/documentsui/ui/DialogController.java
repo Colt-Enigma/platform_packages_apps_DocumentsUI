@@ -75,18 +75,13 @@ public interface DialogController {
         public void confirmDelete(List<DocumentInfo> docs, ConfirmationCallback callback) {
             assert(!docs.isEmpty());
 
-            TextView message =
-                    (TextView) mActivity.getLayoutInflater().inflate(
-                            R.layout.dialog_delete_confirmation, null);
-            message.setText(mMessages.generateDeleteMessage(docs));
-
             // For now, we implement this dialog NOT
             // as a fragment (which can survive rotation and have its own state),
             // but as a simple runtime dialog. So rotating a device with an
             // active delete dialog...results in that dialog disappearing.
             // We can do better, but don't have cycles for it now.
             final AlertDialog alertDialog = new AlertDialog.Builder(mActivity)
-                    .setView(message)
+                    .setMessage(mMessages.generateDeleteMessage(docs))
                     .setPositiveButton(
                             android.R.string.ok,
                             new DialogInterface.OnClickListener() {
