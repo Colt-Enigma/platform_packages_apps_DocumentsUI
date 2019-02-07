@@ -22,8 +22,8 @@
         <item name="android:textSelectHandleRight">@drawable/text_select_handle_right</item>
         <item name="android:textCursorDrawable">@drawable/text_cursor</item>
         <item name="android:textColorHighlight">@color/text_highlight</item>
-        <item name="android:colorPrimary">@color/tool_bar_color_static</item>
-        <item name="android:colorPrimaryDark">@color/status_bar_color_static</item>
+        <item name="android:colorPrimary">@color/tool_bar_color</item>
+        <item name="android:colorPrimaryDark">@color/status_bar_color</item>
     </style>
     <style name="ActionBarPopupTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog" />
 
@@ -59,7 +59,7 @@
         <item name="actionModeStyle">@style/ActionModeStyle</item>
         <item name="android:actionModeStyle">@style/ActionModeStyle</item>
         <item name="android:alertDialogTheme">@style/DialogTheme</item>
-        <item name="android:statusBarColor">@color/status_bar_color_static</item>
+        <item name="android:statusBarColor">@color/status_bar_color</item>
     </style>
 
     <style name="TrimmedHorizontalProgressBar" parent="android:Widget.Material.ProgressBar.Horizontal">
@@ -78,8 +78,8 @@
     </style>
 
     <style name="ActionModeStyle" parent="@style/Widget.AppCompat.ActionMode">
-        <item name="android:background">@color/tool_bar_color_static</item>
-        <item name="background">@color/tool_bar_color_static</item>
+        <item name="android:background">@color/tool_bar_color</item>
+        <item name="background">@color/tool_bar_color</item>
         <item name="android:titleTextStyle">@style/ActionModeTitleStyle</item>
     </style>
 

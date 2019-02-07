@@ -66,8 +66,8 @@
     <color name="item_drag_shadow_background">@*android:color/white</color>
     <color name="item_drag_shadow_container_background">@*android:color/transparent</color>
 
-    <color name="downloads_icon_background">#ff4688f2</color>
-    <color name="app_icon_background">#ff4688f2</color>
+    <color name="downloads_icon_background">@color/tool_bar_color</color>
+    <color name="app_icon_background">@color/tool_bar_color</color>
     <color name="shortcut_foreground">#ff3367d6</color>
     <color name="shortcut_background">#fff5f5f5</color>
 
@@ -84,6 +84,5 @@
     <color name="inspector_section_divider">#E0E0E0</color>
     <color name="inspector_header_title">@*android:color/white</color>
 
-    <color name="status_bar_color_static">#ff254FAE</color>
-    <color name="tool_bar_color_static">#ff1A73E8</color>
+    <color name="status_bar_color">#ff254FAE</color>
 </resources>
